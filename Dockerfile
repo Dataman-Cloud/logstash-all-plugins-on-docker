@@ -8,7 +8,7 @@ ENV LOGSTASH_URL https://download.elastic.co/logstash/logstash/logstash-all-plug
 
 RUN wget $LOGSTASH_URL && \
     tar -zxf $LOGSTASH_TAR && \
-    rm $LOGSTAS_TAR && \
+    rm $LOGSTASH_TAR && \
     mv /logstash* /logstash && \
     mkdir /logstash-conf
 
@@ -16,4 +16,4 @@ ADD logstash.conf /logstash-conf/logstash.conf
 
 WORKDIR /logstash
 
-ENTRYPOINT ["bin/logstash -f /logstash/logstash.conf"]
+ENTRYPOINT ["bin/logstash","-f","/logstash-conf/logstash.conf"]

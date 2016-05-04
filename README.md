@@ -16,7 +16,7 @@ logstash version: 2.3.1 All plugins
 	}
 
 >Data source: meetup.com RSVP stream
->detail: ![here](http://www.meetup.com/meetup_api/docs/stream/2/rsvps/#websockets)
+>detail: [here](http://www.meetup.com/meetup_api/docs/stream/2/rsvps/#websockets)
 
 ## Deploy:
 
